@@ -1,8 +1,11 @@
 import React from 'react'
-import { StyleSheet, Text, View, Pressable } from 'react-native'
+import { StyleSheet, Text, View, Pressable, ImageBackground } from 'react-native'
 
 const CalculateTheRisk = ({navigation}) => {
   return (
+    <ImageBackground
+    source={require("../src/images/back.png")}
+        style={{ width: "100%", height: "100%" }}>
       <View style={styles.container}>
         <Pressable style={styles.button} onPress={() => {navigation.navigate('AirQuality')}}>
                 <Text style={styles.text}>Air Quality Map</Text>
@@ -13,7 +16,11 @@ const CalculateTheRisk = ({navigation}) => {
         <Pressable style={styles.button} onPress={() => {navigation.navigate('GreenHouse')}}>
                 <Text style={styles.text}>GreenHouse Map</Text>
         </Pressable>
+        <Pressable style={styles.button} onPress={() => {navigation.navigate('Calculation')}}>
+                <Text style={styles.text}>Calculation</Text>
+        </Pressable>
   </View>
+  </ImageBackground>
   )
 }
 
@@ -36,7 +43,7 @@ const styles = StyleSheet.create({
     elevation: 3,
     margin: 10,
     width: 400,
-    backgroundColor: 'white',
+    backgroundColor: 'gray',
     fontFamily: 'Inter_900Black'
   },
   text: {
@@ -44,6 +51,6 @@ const styles = StyleSheet.create({
     lineHeight: 21,
     fontWeight: 'bold',
     letterSpacing: 0.25,
-    color: 'gray',
+    color: 'white',
   },
 })

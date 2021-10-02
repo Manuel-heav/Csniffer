@@ -50,9 +50,6 @@ const HomeScreen = ({navigation}) => {
         <Pressable style={styles.button} onPress={() => {navigation.navigate('Info')}}>
                 <Text style={styles.text}>Info With Location</Text>
         </Pressable>
-        <Pressable style={styles.button} onPress={() => {navigation.navigate('Article')}}>
-                <Text style={styles.text}>Article</Text>
-        </Pressable>
         <Pressable style={styles.button} onPress={() => {navigation.navigate('Map')}}>
                 <Text style={styles.text}>Map</Text>
         </Pressable>

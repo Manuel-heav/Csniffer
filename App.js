@@ -7,14 +7,13 @@ import DashBoardScreen from './Screen/DashboardScreen'
 import InfoScreen from './Screen/infoWithLocationScreen'
 import MastheadScreen from './Screen/MastheadScreen'
 import HomeScreen  from './Screen/HomeScreen'
-import ArticleScreen  from './Screen/ArticleScreen'
 import MapScreen from './Screen/MapScreen'
 import WelcomeScreen from './Screen/WelcomeScreen'
 import CalculateTheRisk from './Screen/CalculateTheRiskScreen'
 import AirQuality from './Screen/infoScreen/AirQualityScreen'
 import GreenHouse from './Screen/infoScreen/GreenHouseScreen'
 import Population from './Screen/infoScreen/PopulationScreen'
-
+import Calculation from './Screen/infoScreen/CalculationScreen'
 
 const Stack = createNativeStackNavigator();
 const screenOptions = {
@@ -31,10 +30,10 @@ export default function App() {
         <Stack.Screen name="AirQuality" component={AirQuality}/>
         <Stack.Screen name="GreenHouse" component={GreenHouse}/>
         <Stack.Screen name="Population" component={Population}/>
+        <Stack.Screen name="Calculation" component={Calculation}/>
           <Stack.Screen name="CSniffer" component={HomeScreen} options={{headerShown: false}}/>
           <Stack.Screen name="Dashboard" component={DashBoardScreen} />
           <Stack.Screen name="Info" component={InfoScreen}/>
-          <Stack.Screen name="Article" component={ArticleScreen}/>
         <Stack.Screen name="Masthead" component={MastheadScreen}/>
         <Stack.Screen name="Map" component={MapScreen}/>
         </Stack.Navigator>

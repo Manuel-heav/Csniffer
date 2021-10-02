@@ -4,7 +4,7 @@ import { WebView } from 'react-native-webview';
 
 const PopulationScreen = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <WebView
             style={{width: 600, height: 500}}
     source={{uri: 'https://eodashboard.org/iframe?poi=W6-NASAPopulation'}}
@@ -19,6 +19,9 @@ The Covid-19 is a highly contagious disease which becomes a serious global healt
 export default PopulationScreen
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1
+  },
   text:{
     margin: 20,
     fontSize: 20
