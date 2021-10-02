@@ -35,7 +35,8 @@ const HomeScreen = ({navigation}) => {
             name="account-circle"
             size={33}
             color="#a2a2db"
-            style={{ marginLeft: 450 }}
+            // style={{ marginLeft: 450 }}
+            style={{ marginLeft: 300 }}
           />
         </View>
 
@@ -95,7 +96,8 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     elevation: 3,
     margin: 10,
-    width: 400,
+    // width: 400,
+    width: 300,
     backgroundColor: 'white',
     fontFamily: 'Inter_900Black'
   },

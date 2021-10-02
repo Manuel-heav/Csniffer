@@ -42,7 +42,8 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     elevation: 3,
     margin: 10,
-    width: 400,
+    // width: 400,
+    width: 300,
     backgroundColor: 'gray',
     fontFamily: 'Inter_900Black'
   },
