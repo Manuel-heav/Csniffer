@@ -17,11 +17,7 @@ const HomeScreen = ({navigation}) => {
         source={require("../src/images/back.png")}
         style={{ width: "100%", height: "100%" }}
       >
-        {/* <Header
-  leftComponent={{ icon: 'menu', color: '#fff', iconStyle: { color: '#fff' } }}
-  centerComponent={{ text: 'MY TITLE', style: { color: '#fff' } }}
-  rightComponent={{ icon: 'home', color: '#fff' }}
-/> */}
+        
 <View
           style={{
             flexDirection: "row",
@@ -57,11 +53,6 @@ const HomeScreen = ({navigation}) => {
         <Pressable style={styles.button} onPress={() => {navigation.navigate('Masthead')}}>
                 <Text style={styles.text}>About</Text>
         </Pressable>
-       
-          {/* <Button title="Dashboard" containerStyle={styles.btnPrimary} onPress={() => {navigation.navigate('Dashboard')}}/>
-          <Button title="Info with Location" containerStyle={styles.btnSecondary} onPress={() => {navigation.navigate('Info')}}/>
-          <Button title="Articles and Resources" containerStyle={styles.btnSecondary} onPress={() => {navigation.navigate('Article')}}/>
-          <Button title="About"  containerStyle={styles.btnTeritary} onPress={() => {navigation.navigate('Masthead')}}/> */}
           </View>
         </ImageBackground>
   )
@@ -76,18 +67,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
   },
-  // btnPrimary:{
-  //   width: 400,
-  //   margin: 20,
-  // },
-  // btnSecondary:{
-  //   width: 400,
-  //   margin: 20,
-  // },
-  // btnTeritary:{
-  //   width: 400,
-  //   margin: 20,
-  // }
   button: {
     alignItems: 'center',
     justifyContent: 'center',
@@ -96,7 +75,6 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     elevation: 3,
     margin: 10,
-    // width: 400,
     width: 300,
     backgroundColor: 'white',
     fontFamily: 'Inter_900Black'

@@ -16,9 +16,7 @@ const CalculateTheRisk = ({navigation}) => {
         <Pressable style={styles.button} onPress={() => {navigation.navigate('GreenHouse')}}>
                 <Text style={styles.text}>GreenHouse Map</Text>
         </Pressable>
-        <Pressable style={styles.button} onPress={() => {navigation.navigate('Calculation')}}>
-                <Text style={styles.text}>Calculation</Text>
-        </Pressable>
+        
   </View>
   </ImageBackground>
   )

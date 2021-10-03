@@ -6,7 +6,7 @@ const PopulationScreen = () => {
   return (
     <View style={styles.container}>
       <WebView
-            style={{width: 600, height: 500}}
+            style={{width: Dimensions.get('window').width/2, height: Dimensions.get('window').height/2}}
     source={{uri: 'https://eodashboard.org/iframe?poi=W6-NASAPopulation'}}
 /> 
 <Text style={styles.text}>
